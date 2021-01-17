@@ -1,0 +1,10 @@
+-
+  name: Copy files to targets
+  hosts: playground
+  tasks:
+    - name: Copy test file
+      copy:
+        src: modules.txt
+        dest: ~/modules
+    - name: Confirm copy
+      command: ls ~/
