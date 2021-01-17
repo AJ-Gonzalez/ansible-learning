@@ -1,0 +1,7 @@
+[playground:vars]
+ansible_ssh_private_key_file=/path/to/key.pem
+ansible_user=ubuntu
+
+[playground]
+server0 ansible_host=ip_here
+server1 ansible_host=ip_here

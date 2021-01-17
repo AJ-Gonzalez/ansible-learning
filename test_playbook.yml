@@ -1,0 +1,14 @@
+-
+  name: Test Play
+  hosts: playground
+  tasks:
+    - name: Get Date
+      command: date
+- name: Test Install
+  hosts: playground
+  become: yes
+  tasks:
+    - name: Install Neofetch
+      apt:
+        name: neofetch
+        state: present
