@@ -1,0 +1,9 @@
+-
+  name: Set bash prompt
+  hosts: playground
+  tasks:
+    -
+      name: Edit .bashrc
+      lineinfile:
+        path: ~/.bashrc
+        line: 'export PS1="\A \[\e[01;33m\]\h\[\e[01;m\]:\[\e[36m\]\W\[\e[m\]\\$ "'
