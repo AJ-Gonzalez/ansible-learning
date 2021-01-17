@@ -4,7 +4,8 @@
   tasks:
     - name: Get Date
       command: date
-- name: Test Install
+-
+  name: Test Install
   hosts: playground
   become: yes
   tasks:

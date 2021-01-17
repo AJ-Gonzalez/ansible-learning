@@ -1,0 +1,13 @@
+-
+  name: Update and upgrade
+  hosts: playground
+  become: yes
+  tasks:
+    - name: Update repos
+      command: apt update
+      register: outA
+    - debug: var=outA.stdout_lines
+    - name: Upgrade repos
+      command: apt upgrade -y
+      register: outB
+    - debug: var=outB.stdout_lines

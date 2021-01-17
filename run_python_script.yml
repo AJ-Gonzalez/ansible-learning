@@ -1,0 +1,9 @@
+-
+  name: Run Python Scripts
+  hosts: playground
+  tasks:
+    - name: run python
+      script: test_python_script.py I_am_an_argument
+      register: out
+# This line give command output
+    - debug: var=out.stdout_lines

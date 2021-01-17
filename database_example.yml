@@ -1,0 +1,17 @@
+-
+  name: Ensure MySQL is installed
+  hosts: playground
+  become: yes
+  tasks:
+    - name: install
+      apt:
+        name: mysql-server
+        state: present
+-
+  name: Start the MySQL service
+  hosts: playground
+  tasks:
+    - name: start mysql
+      service:
+        name: mysql
+        state: started

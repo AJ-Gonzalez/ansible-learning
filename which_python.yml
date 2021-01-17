@@ -1,0 +1,9 @@
+-
+  name: Find Python path
+  hosts: playground
+  tasks:
+    - name: find python
+      command: which python3
+      register: out
+# This line give command output
+    - debug: var=out.stdout_lines
