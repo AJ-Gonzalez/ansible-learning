@@ -1,0 +1,2 @@
+prompt: export PS1="\A \[\e[01;33m\]\h\[\e[01;m\]:\[\e[01;36m\]\W\[\e[01;m\]\\$ "
+jupyter_port: 5000
