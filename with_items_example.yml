@@ -1,0 +1,13 @@
+-
+    name: 'Print list of things'
+    hosts: playground
+    vars:
+        things:
+            - Thing one
+            - Thing two
+            - Thing three
+            - Thing four
+    tasks:
+        -   name: Printing things
+            command: 'echo "{{ item }}"'
+            with_items: "{{things}}"

@@ -1,0 +1,5 @@
+-
+    name: MySQL install
+    hosts: playground
+    roles:
+      - mysql
